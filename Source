@@ -4,7 +4,6 @@
 local Crate = coroutine.wrap
 
 	print("Sensory was injected :)")
-local function launch()
 
 
 
@@ -410,7 +409,7 @@ local function launch()
 
 
 
-end
+
 
 
 sens = {}
