@@ -503,10 +503,10 @@ local function Track(Type,clk)
 end
 function sens.MakePage(mf,Name)
 	if sens.Pages[Name] == nil then
-		local Scrl = mf.PageClone:Clone()
+		 Scrl = mf.PageClone:Clone()
 		Scrl.Name = "PageArray"..Name
 		Scrl.Parent = mf
-	local	Pg = mf.Page:Clone()
+		Pg = mf.Page:Clone()
 
 		Pg.Visible = true
 		Pg.Name = Name
@@ -518,7 +518,7 @@ function sens.MakePage(mf,Name)
 end
 function sens.MakeToggle(mf,Page,Name)
 	if sens.Pages[Page] ~= nil and sens.Toggles[Name]==nil then
-		local tgl = mf.Toggle:clone()
+		 tgl = mf.Toggle:clone()
 		tgl.Parent = sens.Pages[Page]
 		tgl.TgName.Text = Name
 		tgl.Name = "Toggle"..Name
@@ -530,7 +530,7 @@ function sens.MakeToggle(mf,Page,Name)
 end
 function sens.MakeInput(mf,Page,Name,Text)
 	if sens.Pages[Page] ~= nil and sens.Inputs[Name]==nil then
-	local	inpt = mf.Input:clone()
+		inpt = mf.Input:clone()
 		inpt.Parent = sens.Pages[Page]
 		inpt.Name = "Input"..Name
 		inpt.TextBox.PlaceholderText = Text
@@ -540,7 +540,7 @@ function sens.MakeInput(mf,Page,Name,Text)
 end
 function sens.MakeSlider(mf,Page,Name,Max)
 	if sens.Pages[Page] ~= nil and sens.Sliders[Name]==nil then
-	local	sldr = mf.Slider:clone()
+		sldr = mf.Slider:clone()
 		sldr.Parent = sens.Pages[Page]
 		sldr.SlName.Text = Name
 		sldr.Name = "Slider"..Name
