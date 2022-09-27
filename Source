@@ -6,7 +6,7 @@ local Crate = coroutine.wrap
 	print("Sensory was injected :)")
 
 
-
+local function launch()
 
 	script.Name = "sensoryScript"
 
@@ -407,7 +407,7 @@ local Crate = coroutine.wrap
 	Crate(FWXQKNR_fake_script)()
 
 
-
+end
 
 
 
