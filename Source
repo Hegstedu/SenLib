@@ -435,7 +435,7 @@ local function Track(Type,clk)
 	elseif Type== "Button" then
 		clk.But.MouseButton1Click:connect(function(f)
 			sn:Play()
-			btn.Active = true
+			clk.Active = true
 		end)
 	elseif Type== "Toggle" then
 		clk.MouseButton1Click:connect(function(f)
