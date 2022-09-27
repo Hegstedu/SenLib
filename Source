@@ -558,7 +558,7 @@ function sens.MakeSlider(mf,Page,Name,Max)
 end
 function sens.MakeButton(mf,Page,Name)
 	if sens.Pages[Page] ~= nil and sens.Buttons[Name]==nil then
-		local btn = mf.Button:Clone()
+		 btn = mf.Button:Clone()
 		btn.Parent = sens.Pages[Page]
 		btn.Name = "Button"..Name
 		btn.But.Text = Name
@@ -584,7 +584,7 @@ function sens.CheckToggle(mf,Page,Name)
 end
 function sens.CheckButton(mf,Page,Name)
 	if sens.Pages[Page] ~= nil and sens.Buttons[Name]~=nil then
-		local act = sens.Buttons[Name].Active
+		 act = sens.Buttons[Name].Active
 		sens.Buttons[Name].Active = false
 		return act
 	end
