@@ -589,20 +589,3 @@ function sens.CheckButton(mf,Page,Name)
 		return act
 	end
 end
-
-local function CreateGui()
-	sens.MakePage(mf,"Main")
-	sens.MakePage(mf,"Another")
-	sens.MakeToggle(mf,"Main","Toggle")
-	sens.MakeSlider(mf,"Main","Slider",100)
-	sens.MakeSlider(mf,"Another","Time(Ms)",75)
-	sens.MakeToggle(mf,"Another","AutoAttack")
-	sens.MakeInput(mf,"Main","Input","text here")
-	sens.MakeButton(mf,"Main","Butt")
-end
-if game.Players.LocalPlayer.PlayerGui:FindFirstChild("sensoryGui") == nil then
-
-	Crate(launch)()
-	Crate(CreateGui)()
-
-end
