@@ -1,0 +1,608 @@
+
+
+
+local Crate = coroutine.wrap
+
+	print("Sensory was injected :)")
+local function launch()
+
+
+
+
+	script.Name = "sensoryScript"
+
+	sensoryGui = Instance.new("ScreenGui")
+	MainFrame = Instance.new("Frame")
+	sn = Instance.new("Sound")
+	sn.SoundId = "rbxassetid://452267918"
+	sn.Volume = 0.3
+	sn.Parent = MainFrame
+	sn.Name = "snd"	
+	sn2 = Instance.new("Sound")
+	sn2.SoundId = "rbxassetid://452267918"
+	sn2.Volume = 0.3
+	sn2.PlaybackSpeed = 1.5
+	sn2.Parent = MainFrame
+	sn2.Name = "snd"	
+	sn3 = Instance.new("Sound")
+	sn3.SoundId = "rbxassetid://452267918"
+	sn3.Volume = 0.3
+	sn3.PlaybackSpeed = 4
+	sn3.Parent = MainFrame
+	sn3.Name = "snd"	
+	local UICorner = Instance.new("UICorner")
+	local RGBBackground = Instance.new("Frame")
+	local UICorner_2 = Instance.new("UICorner")
+	local Tab = Instance.new("Frame")
+	local UICorner_3 = Instance.new("UICorner")
+	local ASensoryLabel = Instance.new("Frame")
+	local UICorner_4 = Instance.new("UICorner")
+	local TextLabel = Instance.new("TextLabel")
+	local UIListLayout = Instance.new("UIListLayout")
+	local UIPadding = Instance.new("UIPadding")
+	local UIGradient = Instance.new("UIGradient")
+	local ScaleFrame = Instance.new("UIScale")
+	local PageClone = Instance.new("ScrollingFrame")
+	local UIListLayout_2 = Instance.new("UIListLayout")
+	local UIPadding_2 = Instance.new("UIPadding")
+	local Page = Instance.new("TextButton")
+	local UICorner_5 = Instance.new("UICorner")
+	local UIGradient_2 = Instance.new("UIGradient")
+	local Toggle = Instance.new("Frame")
+	local UICorner_6 = Instance.new("UICorner")
+	local TgName = Instance.new("TextLabel")
+	local Toggle_2 = Instance.new("Frame")
+	local UICorner_7 = Instance.new("UICorner")
+	local ToggleFrame = Instance.new("TextButton")
+	local UICorner_8 = Instance.new("UICorner")
+	local Input = Instance.new("Frame")
+	local UICorner_9 = Instance.new("UICorner")
+	local TextBox = Instance.new("TextBox")
+	local UICorner_10 = Instance.new("UICorner")
+	local Slider = Instance.new("TextButton")
+	local UICorner_11 = Instance.new("UICorner")
+	local SlName = Instance.new("TextLabel")
+	local Count = Instance.new("TextLabel")
+	local Base = Instance.new("Frame")
+	local UICorner_12 = Instance.new("UICorner")
+	local Bar = Instance.new("TextButton")
+	local UICorner_13 = Instance.new("UICorner")
+	local Button = Instance.new("Frame")
+	local UICorner_14 = Instance.new("UICorner")
+	local But = Instance.new("TextButton")
+
+	--Properties:
+
+	sensoryGui.Name = "sensoryGui"
+	sensoryGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+	MainFrame.Name = "MainFrame"
+	MainFrame.Parent = sensoryGui
+	MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+	MainFrame.Position = UDim2.new(0.220593944, 0, 0.141764805, 0)
+	MainFrame.Size = UDim2.new(0, 650, 0, 450)
+
+	UICorner.CornerRadius = UDim.new(0, 10)
+	UICorner.Parent = MainFrame
+
+	RGBBackground.Name = "RGBBackground"
+	RGBBackground.Parent = MainFrame
+	RGBBackground.BackgroundColor3 = Color3.fromRGB(82, 170, 0)
+	RGBBackground.Position = UDim2.new(-0.00461538462, 0, -0.00666666683, 0)
+	RGBBackground.Size = UDim2.new(0, 655, 0, 455)
+	RGBBackground.ZIndex = -6
+
+	UICorner_2.CornerRadius = UDim.new(0, 10)
+	UICorner_2.Parent = RGBBackground
+
+	Tab.Name = "Tab"
+	Tab.Parent = MainFrame
+	Tab.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+	Tab.Position = UDim2.new(0.0107692303, 0, 0.00921183266, 0)
+	Tab.Size = UDim2.new(0, 207, 0, 445)
+	Tab.ZIndex = 2
+
+	UICorner_3.CornerRadius = UDim.new(0, 10)
+	UICorner_3.Parent = Tab
+
+	ASensoryLabel.Name = "ASensoryLabel"
+	ASensoryLabel.Parent = Tab
+	ASensoryLabel.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	ASensoryLabel.Position = UDim2.new(0.0278837234, 0, 0.0360272452, 0)
+	ASensoryLabel.Size = UDim2.new(0, 189, 0, 42)
+	ASensoryLabel.ZIndex = 2
+
+	UICorner_4.CornerRadius = UDim.new(0, 10)
+	UICorner_4.Parent = ASensoryLabel
+
+	TextLabel.Parent = ASensoryLabel
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 10.000
+	TextLabel.Position = UDim2.new(0.0989999995, 0, -0.360714287, 0)
+	TextLabel.Size = UDim2.new(0, 151, 0, 59)
+	TextLabel.ZIndex = 10
+	TextLabel.Font = Enum.Font.Unknown
+	TextLabel.Text = "sensory"
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 50.000
+	TextLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 255)
+	TextLabel.TextWrapped = true
+
+	UIListLayout.Parent = Tab
+	UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout.Padding = UDim.new(0, 8)
+
+	UIPadding.Parent = Tab
+	UIPadding.PaddingTop = UDim.new(0, 7)
+
+	UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(44, 44, 44)), ColorSequenceKeypoint.new(0.61, Color3.fromRGB(158, 158, 158)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient.Rotation = 45
+	UIGradient.Parent = Tab
+
+	ScaleFrame.Name = "ScaleFrame"
+	ScaleFrame.Parent = MainFrame
+	ScaleFrame.Scale = 0.800
+
+	PageClone.Name = "PageClone"
+	PageClone.Parent = MainFrame
+	PageClone.Active = true
+	PageClone.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	PageClone.BackgroundTransparency = 0.950
+	PageClone.Position = UDim2.new(0.342307717, 0, 0.0111111114, 0)
+	PageClone.Size = UDim2.new(0, 420, 0, 439)
+	PageClone.Visible = false
+	PageClone.ZIndex = 2
+	PageClone.ScrollBarThickness = 6
+
+	UIListLayout_2.Parent = PageClone
+	UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout_2.Padding = UDim.new(0, 8)
+
+	UIPadding_2.Parent = PageClone
+	UIPadding_2.PaddingTop = UDim.new(0, 5)
+
+	Page.Name = "Page"
+	Page.Parent = MainFrame
+	Page.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+	Page.BackgroundTransparency = 0.600
+	Page.Position = UDim2.new(0.0252757221, 0, 0.140860617, 0)
+	Page.Size = UDim2.new(0, 189, 0, 42)
+	Page.Visible = false
+	Page.ZIndex = 15
+	Page.Font = Enum.Font.SourceSans
+	Page.Text = "Page"
+	Page.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Page.TextScaled = true
+	Page.TextSize = 35.000
+	Page.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	Page.TextWrapped = true
+
+	UICorner_5.CornerRadius = UDim.new(0, 10)
+	UICorner_5.Parent = Page
+
+	UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(44, 44, 44)), ColorSequenceKeypoint.new(0.61, Color3.fromRGB(158, 158, 158)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(21, 21, 21))}
+	UIGradient_2.Rotation = 45
+	UIGradient_2.Parent = MainFrame
+
+	Toggle.Name = "Toggle"
+	Toggle.Parent = MainFrame
+	Toggle.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	Toggle.BorderColor3 = Color3.fromRGB(33, 33, 33)
+	Toggle.Position = UDim2.new(0.0668511391, 0, 0.344365925, 0)
+	Toggle.Size = UDim2.new(0, 409, 0, 45)
+	Toggle.Visible = false
+
+	UICorner_6.CornerRadius = UDim.new(0, 10)
+	UICorner_6.Parent = Toggle
+
+	TgName.Name = "TgName"
+	TgName.Parent = Toggle
+	TgName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TgName.BackgroundTransparency = 100.000
+	TgName.Size = UDim2.new(0, 119, 0, 45)
+	TgName.Font = Enum.Font.SourceSans
+	TgName.Text = "Toggle"
+	TgName.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TgName.TextScaled = true
+	TgName.TextSize = 35.000
+	TgName.TextWrapped = true
+
+	Toggle_2.Name = "Toggle"
+	Toggle_2.Parent = Toggle
+	Toggle_2.BackgroundColor3 = Color3.fromRGB(203, 203, 203)
+	Toggle_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+	Toggle_2.Position = UDim2.new(0.814999998, 0, 0.275000006, 0)
+	Toggle_2.Size = UDim2.new(0, 20, 0, 20)
+	Toggle_2.ZIndex = 20
+
+	UICorner_7.CornerRadius = UDim.new(0, 10)
+	UICorner_7.Parent = Toggle_2
+
+	ToggleFrame.Name = "ToggleFrame"
+	ToggleFrame.Parent = Toggle
+	ToggleFrame.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+	ToggleFrame.Position = UDim2.new(0.800000012, 0, 0.185000002, 0)
+	ToggleFrame.Size = UDim2.new(0, 60, 0, 28)
+	ToggleFrame.Font = Enum.Font.SourceSans
+	ToggleFrame.Text = ""
+	ToggleFrame.TextColor3 = Color3.fromRGB(0, 0, 0)
+	ToggleFrame.TextSize = 14.000
+
+	UICorner_8.CornerRadius = UDim.new(0, 10)
+	UICorner_8.Parent = ToggleFrame
+
+	Input.Name = "Input"
+	Input.Parent = MainFrame
+	Input.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+	Input.Size = UDim2.new(0, 409, 0, 45)
+	Input.Visible = false
+	Input.ZIndex = 3
+
+	UICorner_9.CornerRadius = UDim.new(0, 10)
+	UICorner_9.Parent = Input
+
+	TextBox.Parent = Input
+	TextBox.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+	TextBox.BackgroundTransparency = 0.650
+	TextBox.Position = UDim2.new(0, 16, 0, 7)
+	TextBox.Size = UDim2.new(0, 380, 0, 30)
+	TextBox.ZIndex = 3
+	TextBox.Font = Enum.Font.Arial
+	TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+	TextBox.PlaceholderText = "text here"
+	TextBox.Text = ""
+	TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextBox.TextScaled = true
+	TextBox.TextSize = 20.000
+	TextBox.TextTransparency = 0.800
+	TextBox.TextWrapped = true
+
+	UICorner_10.Parent = TextBox
+
+	Slider.Name = "Slider"
+	Slider.Parent = MainFrame
+	Slider.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	Slider.Size = UDim2.new(0, 409, 0, 45)
+	Slider.Visible = false
+	Slider.Font = Enum.Font.SourceSans
+	Slider.Text = ""
+	Slider.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Slider.TextSize = 14.000
+
+	UICorner_11.CornerRadius = UDim.new(0, 10)
+	UICorner_11.Parent = Slider
+
+	SlName.Name = "SlName"
+	SlName.Parent = Slider
+	SlName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	SlName.BackgroundTransparency = 100.000
+	SlName.Position = UDim2.new(0, 18, 0, 0)
+	SlName.Size = UDim2.new(0, 175, 0, 21)
+	SlName.Font = Enum.Font.SourceSans
+	SlName.Text = "Slider"
+	SlName.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SlName.TextScaled = true
+	SlName.TextSize = 25.000
+	SlName.TextWrapped = true
+	SlName.TextXAlignment = Enum.TextXAlignment.Left
+
+	Count.Name = "Count"
+	Count.Parent = Slider
+	Count.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Count.BackgroundTransparency = 100.000
+	Count.Position = UDim2.new(0.75, 0, 0, 0)
+	Count.Size = UDim2.new(0, 100, 0, 21)
+	Count.Font = Enum.Font.SourceSans
+	Count.Text = "0"
+	Count.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Count.TextScaled = true
+	Count.TextSize = 25.000
+	Count.TextWrapped = true
+
+	Base.Name = "Base"
+	Base.Parent = Slider
+	Base.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	Base.BorderColor3 = Color3.fromRGB(33, 33, 33)
+	Base.Position = UDim2.new(0.0456052013, 0, 0.444445133, 0)
+	Base.Size = UDim2.new(0, 350, 0, 14)
+	Base.ZIndex = 3
+
+	UICorner_12.CornerRadius = UDim.new(0, 10)
+	UICorner_12.Parent = Base
+
+	Bar.Name = "Bar"
+	Bar.Parent = Base
+	Bar.BackgroundColor3 = Color3.fromRGB(203, 203, 203)
+	Bar.Position = UDim2.new(-0.00200000009, 0, -0, 0)
+	Bar.Size = UDim2.new(0, 350, 0, 14)
+	Bar.ZIndex = 3
+	Bar.Font = Enum.Font.SourceSans
+	Bar.Text = ""
+	Bar.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Bar.TextSize = 14.000
+
+	UICorner_13.CornerRadius = UDim.new(0, 10)
+	UICorner_13.Parent = Bar
+
+	Button.Name = "Button"
+	Button.Parent = MainFrame
+	Button.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	Button.BorderColor3 = Color3.fromRGB(33, 33, 33)
+	Button.Position = UDim2.new(0.0683414638, 0, 0.119105548, 0)
+	Button.Size = UDim2.new(0, 409, 0, 45)
+	Button.Visible = false
+
+	UICorner_14.CornerRadius = UDim.new(0, 10)
+	UICorner_14.Parent = Button
+
+	But.Name = "But"
+	But.Parent = Button
+	But.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	But.BackgroundTransparency = 100.000
+	But.Size = UDim2.new(0, 409, 0, 45)
+	But.Font = Enum.Font.SourceSans
+	But.TextColor3 = Color3.fromRGB(255, 255, 255)
+	But.TextSize = 35.000
+	mf = MainFrame
+
+
+
+	local function PEEBIN_fake_script() 
+		local script = Instance.new('LocalScript', MainFrame)
+
+		function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+		counter = 0
+
+		while wait(0.005)do
+			script.Parent.RGBBackground.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+			script.Parent.Tab.ASensoryLabel.TextLabel.TextColor3= Color3.fromHSV(zigzag(counter),1,1)
+			counter = counter + 0.001
+		end
+
+
+
+	end
+	Crate(PEEBIN_fake_script)()
+	local function FWXQKNR_fake_script() 
+		local script = Instance.new('LocalScript', MainFrame)
+
+		local UIS = game:GetService('UserInputService')
+		local frame = script.Parent
+		local dragToggle = nil
+		local dragSpeed = 0.1
+		local dragStart = nil
+		local startPos = nil
+		script.Parent.Position = UDim2.new(0.5,-(script.Parent.Size.X.Offset/2),0.5,-(script.Parent.Size.Y.Offset/2))
+		local function updateInput(input)
+			local delta = input.Position - dragStart
+			local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+				startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+			game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+		end
+
+		script.Parent.Tab.ASensoryLabel.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+				dragToggle = true
+				dragStart = input.Position
+				startPos = frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+
+		UIS.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				if dragToggle then
+					updateInput(input)
+				end
+			end
+		end)
+	end
+	Crate(FWXQKNR_fake_script)()
+
+
+
+
+end
+
+
+sens = {}
+sens.Pages = {}
+sens.Toggles = {}
+sens.Sliders = {}
+sens.Inputs = {}
+sens.Buttons = {}
+local function Track(Type,clk)
+
+
+	if Type == "Page" then
+		clk.MouseButton1Click:connect(function(f)
+			sn:Play()
+			for i,v in pairs(mf:GetChildren()) do
+				if v.ClassName == "ScrollingFrame" then
+					v.Visible = false
+				end
+			end
+			mf:FindFirstChild("PageArray"..clk.Name).Visible = true
+		end)
+	elseif Type== "Button" then
+		clk.But.MouseButton1Click:connect(function(f)
+			sn:Play()
+			btn.Active = true
+		end)
+	elseif Type== "Toggle" then
+		clk.MouseButton1Click:connect(function(f)
+			sn2:Play()
+		local	pos = clk.Parent.Toggle.Position
+			if clk.Parent.Toggle.Active == false then
+				while clk.Parent.Toggle.Position.X.Scale < 0.87 do
+					clk.Parent.Toggle.Position = UDim2.new(clk.Parent.Toggle.Position.X.Scale+.025,pos.X.Offset,pos.Y.Scale,pos.Y.Offset)
+
+					wait()
+				end
+				clk.Parent.Toggle.Position = UDim2.new(0.88,pos.X.Offset,pos.Y.Scale,pos.Y.Offset)
+				clk.BackgroundColor3 = Color3.fromRGB(203, 203, 203)
+				clk.Parent.Toggle.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+			else
+				while clk.Parent.Toggle.Position.X.Scale > 0.815 do
+					clk.Parent.Toggle.Position = UDim2.new(clk.Parent.Toggle.Position.X.Scale-.025,pos.X.Offset,pos.Y.Scale,pos.Y.Offset)
+
+					wait()
+				end
+				clk.Parent.Toggle.Position = UDim2.new(0.815,pos.X.Offset,pos.Y.Scale,pos.Y.Offset)
+				clk.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+				clk.Parent.Toggle.BackgroundColor3 = Color3.fromRGB(203, 203, 203)
+			end
+			clk.Parent.Toggle.Active = not clk.Parent.Toggle.Active
+
+		end)
+	elseif Type =="Slider" then
+		local slider = clk.Base
+		local bar = slider.Bar
+		local textbox = clk.Count
+		local mouse = game.Players.LocalPlayer:GetMouse()
+
+		local sliderPosX = slider.AbsolutePosition.X
+		local sliderSizeX = slider.AbsoluteSize.X
+		local held = false
+
+		clk.MouseButton1Down:Connect(function()
+			held = true
+			bar.Size = UDim2.new(math.clamp((mouse.X - sliderPosX)/sliderSizeX,0,1),0,1,0)
+			textbox.Text = math.floor(bar.Size.X.Scale * clk.MaxValue.Value)
+		end)
+		bar.MouseButton1Down:Connect(function()
+			held = true
+			bar.Size = UDim2.new(math.clamp((mouse.X - sliderPosX)/sliderSizeX,0,1),0,1,0)
+			textbox.Text = math.floor(bar.Size.X.Scale * clk.MaxValue.Value)
+		end)
+		game:GetService("UserInputService").InputEnded:Connect(function(input, gp)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 then
+				held = false
+			end
+		end)
+
+		mouse.Move:Connect(function()
+			if held then
+				sn3:Play()
+				bar.Size = UDim2.new(math.clamp((mouse.X - sliderPosX)/sliderSizeX,0,1),0,1,0)
+				textbox.Text = math.floor(bar.Size.X.Scale * clk.MaxValue.Value)
+
+			end
+		end)
+	
+	end
+
+end
+function sens.MakePage(mf,Name)
+	if sens.Pages[Name] == nil then
+		local Scrl = mf.PageClone:Clone()
+		Scrl.Name = "PageArray"..Name
+		Scrl.Parent = mf
+	local	Pg = mf.Page:Clone()
+
+		Pg.Visible = true
+		Pg.Name = Name
+		Pg.Text = Name
+		Pg.Parent = mf.Tab
+		Track("Page",Pg)
+		sens.Pages[Name] = Scrl
+	end
+end
+function sens.MakeToggle(mf,Page,Name)
+	if sens.Pages[Page] ~= nil and sens.Toggles[Name]==nil then
+		local tgl = mf.Toggle:clone()
+		tgl.Parent = sens.Pages[Page]
+		tgl.TgName.Text = Name
+		tgl.Name = "Toggle"..Name
+		tgl.Visible = true
+		
+		Track("Toggle",tgl.ToggleFrame)
+		sens.Toggles[Name] = tgl.Toggle
+	end
+end
+function sens.MakeInput(mf,Page,Name,Text)
+	if sens.Pages[Page] ~= nil and sens.Inputs[Name]==nil then
+	local	inpt = mf.Input:clone()
+		inpt.Parent = sens.Pages[Page]
+		inpt.Name = "Input"..Name
+		inpt.TextBox.PlaceholderText = Text
+		inpt.Visible = true
+		sens.Inputs[Name] = inpt
+	end
+end
+function sens.MakeSlider(mf,Page,Name,Max)
+	if sens.Pages[Page] ~= nil and sens.Sliders[Name]==nil then
+	local	sldr = mf.Slider:clone()
+		sldr.Parent = sens.Pages[Page]
+		sldr.SlName.Text = Name
+		sldr.Name = "Slider"..Name
+		sldr.Visible = true
+		local maxV = Instance.new("NumberValue")
+		maxV.Name = "MaxValue"
+		maxV.Value = Max
+		maxV.Parent = sldr
+		
+	
+		sldr.Count.Text = Max
+		Track("Slider",sldr)
+		sens.Sliders[Name] = sldr
+	end
+end
+function sens.MakeButton(mf,Page,Name)
+	if sens.Pages[Page] ~= nil and sens.Buttons[Name]==nil then
+		local btn = mf.Button:Clone()
+		btn.Parent = sens.Pages[Page]
+		btn.Name = "Button"..Name
+		btn.But.Text = Name
+		btn.Visible = true
+		Track("Button",btn)
+		sens.Buttons[Name] = btn
+	end
+end
+function sens.CheckInput(mf,Page,Name)
+	if sens.Pages[Page] ~= nil and sens.Inputs[Name]~=nil then
+		return sens.Inputs[Name].TextBox.Text
+	end
+end
+function sens.CheckSlider(mf,Page,Name)
+	if sens.Pages[Page] ~= nil and sens.Sliders[Name]~=nil then
+		return sens.Sliders[Name].Count.Text
+	end
+end
+function sens.CheckToggle(mf,Page,Name)
+	if sens.Pages[Page] ~= nil and sens.Toggles[Name]~=nil then
+		return sens.Toggles[Name].Active
+	end
+end
+function sens.CheckButton(mf,Page,Name)
+	if sens.Pages[Page] ~= nil and sens.Buttons[Name]~=nil then
+		local act = sens.Buttons[Name].Active
+		sens.Buttons[Name].Active = false
+		return act
+	end
+end
+
+local function CreateGui()
+	sens.MakePage(mf,"Main")
+	sens.MakePage(mf,"Another")
+	sens.MakeToggle(mf,"Main","Toggle")
+	sens.MakeSlider(mf,"Main","Slider",100)
+	sens.MakeSlider(mf,"Another","Time(Ms)",75)
+	sens.MakeToggle(mf,"Another","AutoAttack")
+	sens.MakeInput(mf,"Main","Input","text here")
+	sens.MakeButton(mf,"Main","Butt")
+end
+if game.Players.LocalPlayer.PlayerGui:FindFirstChild("sensoryGui") == nil then
+
+	Crate(launch)()
+	Crate(CreateGui)()
+
+end
